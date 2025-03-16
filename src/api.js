@@ -6,6 +6,6 @@ export const api = axios.create({
     baseURL: 'http://localhost:8080',
 });
 
-function getProducts() {
+export function getProducts() {
     api.get('/products')
 }

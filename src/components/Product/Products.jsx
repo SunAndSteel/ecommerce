@@ -1,17 +1,28 @@
-import { Container, Row } from 'react-bootstrap'
-import ProductItem from './ProductItem'
+import { Container, Row } from 'react-bootstrap';
+import ProductItem from './ProductItem';
+import { useEffect, useState } from 'react';
+import { testList } from '../Product/testList';
 
 function Products() {
-    return (
-      <>
-        <Container>
-            <Row>
-              <ProductItem name={"Product 1"} description={"Descrption 1"} price={100}/>
-              <ProductItem name={"Product 2"} description={"Descrption 2"} price={303}/>
-            </Row>
-        </Container>
-      </>
-    )
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    setProducts(testList);
+  }, []);
+
+  return (
+    <Container>
+      <Row>
+        {products.map((product) => (
+          <ProductItem 
+            key={product._id} 
+            name={product.name} 
+            price={product.price} 
+          />
+        ))}
+      </Row>
+    </Container>
+  );
 }
 
-export default Products
+export default Products;
