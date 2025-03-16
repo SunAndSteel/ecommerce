@@ -1,0 +1,36 @@
+const testList = [
+    {
+        name: "produit 1",
+        description: "Descrption du produit 2",
+        category: "649fd7167e129c09e4dced1a",
+        brand: "632f18bc1fa03b3435b08b71",
+        price: 100,
+        quantity: 30,
+        priceDiscount: 25,
+        size: "632f1ae54b4fb1bde5adb6a4",
+        color: "632f1a454b4fb1bde5adb699",
+        tags: ["632f29e2b03588aaa2ce0e11"],
+        details: {
+            brand: "abc",
+            manufacture: "avc"
+        }
+    },
+    {
+        name: "Produit 2",
+        description: "Descrption du produit 2",
+        category: "649fd7167e129c09e4dced1a",
+        brand: "632f18bc1fa03b3435b08b71",
+        price: 123,
+        quantity: 100,
+        priceDiscount: 0,
+        size: "632f1ae54b4fb1bde5adb6a4",
+        color: "632f1a454b4fb1bde5adb699",
+        tags: ["632f29e2b03588aaa2ce0e11"],
+        details: {
+            brand: "abc",
+            manufacture: "avc"
+        }
+    }
+]
+
+export default testList
