@@ -1,11 +1,12 @@
-import { Row, Button } from "react-bootstrap"
+import { Button } from "react-bootstrap"
 
 
 function ProductItemForm() {
     return (
-        <>
-            <label for="prix"><input type="number" id="prix" name="prix" min="1" /><Button variant="primary">Add</Button></label>
-        </>
+        <div style={{display: "flex", alignItems: "center"}}>
+            <label htmlFor="prix" style={{fontSize: "0.8rem"}}><input type="number" id="prix" name="prix" min="1" style={{marginRight: "10px"}}/></label>
+            <Button variant="primary">Add</Button>
+        </div>
     )
 }
 

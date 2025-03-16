@@ -1,12 +1,11 @@
 {/* https://dummyimage.com/800x480/1500ff/000011 / */}
 import { Card, Button } from 'react-bootstrap'
 import ProductItemForm from './ProductItemForm'
-import { Row, Col } from 'react-bootstrap'
 
-function ProductItem({name, price}) {
+function ProductItem({name, price, photo_url}) {
     return (
     <Card style={{ width: '18rem', margin: "10px" }}>
-      <Card.Img variant="top" src="https://dummyimage.com/800x480/1500ff/000011" />
+      <Card.Img variant="top" src="https://dummyimage.com/800x480/1500ff/000011" alt="" />
       <Card.Body>
         <Card.Title>{name}</Card.Title>
             <Card.Text>{price} €

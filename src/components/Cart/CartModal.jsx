@@ -3,6 +3,8 @@ import testList from "../Product/testList";
 
 function CartModal({ open, onClose }) {
   
+
+  {/* BUG : Total amount incorrect */}
   const totalAmount = testList.reduce((sum, product) => sum + product.price * product.quantity, 0);
 
   return (
@@ -23,7 +25,7 @@ function CartModal({ open, onClose }) {
           <tbody>
             {testList.map((product) => (
               <tr key={product._id}>
-                <td>{product._id}</td>
+                <td>{product.brand}</td>
                 <td>{product.name}</td>
                 <td>{product.price}</td>
                 <td>{product.quantity}</td>

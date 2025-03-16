@@ -17,7 +17,7 @@ function Products() {
           <ProductItem 
             key={product._id} 
             name={product.name} 
-            price={product.price} 
+            price={product.price}
           />
         ))}
       </Row>

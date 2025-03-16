@@ -9,3 +9,7 @@ export const api = axios.create({
 export function getProducts() {
     api.get('/products')
 }
+
+export function getCategories() {
+    api.get('/categories')
+}
