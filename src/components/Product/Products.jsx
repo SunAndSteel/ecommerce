@@ -1,4 +1,4 @@
-import { Container, Row } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import ProductItem from './ProductItem';
 import { useEffect, useState } from 'react';
 import { testList } from '../Product/testList';
@@ -14,11 +14,13 @@ function Products() {
     <Container>
       <Row>
         {products.map((product) => (
-          <ProductItem 
-            key={product._id} 
-            name={product.name} 
-            price={product.price}
-          />
+          <Col md={4} key={product._id || product.name}>
+            <ProductItem 
+              id={product._id || product.name} // On utulise l'ID ou le nom comme identifiant
+              name={product.name} 
+              price={product.price}
+            />
+          </Col>
         ))}
       </Row>
     </Container>
