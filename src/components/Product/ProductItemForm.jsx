@@ -1,7 +1,11 @@
+import { Row, Button } from "react-bootstrap"
+
+
 function ProductItemForm() {
     return (
         <>
-            <p>Product Item Form</p>
+            <label for="prix"><input type="number" id="prix" name="prix"/><Button variant="primary">Ajouter</Button></label>
+            
         </>
     )
 }

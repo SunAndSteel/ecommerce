@@ -6,8 +6,8 @@ function Products() {
       <>
         <Container>
             <Row>
-              <ProductItem />
-              <ProductItem />
+              <ProductItem name={"Produit 1"} description={"Descrption du produit 1"} price={100}/>
+              <ProductItem name={"Produit 2"} description={"Descrption du produit 2"} price={123}/>
             </Row>
         </Container>
       </>
