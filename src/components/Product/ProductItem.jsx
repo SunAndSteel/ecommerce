@@ -7,7 +7,7 @@ function ProductItem(props) {
         _id: props.id || props.key, // Utiliser l'ID ou la clé comme identifiant
         name: props.name,
         price: props.price,
-        // Ajoutez d'autres propriétés si besoin
+        // Ajouter d'autres propriétés si besoin
     };
     
     return (

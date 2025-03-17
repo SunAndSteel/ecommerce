@@ -4,6 +4,7 @@ import { useCart } from "./CartContext";
 function CartModal({ open, onClose }) {
   const { items, clearCart } = useCart();
 
+  // Tâche 5 reduce()
   const totalAmount = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   const handleOrder = () => {
