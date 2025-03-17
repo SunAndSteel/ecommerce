@@ -1,3 +1,4 @@
+/* eslint-disable react-refresh/only-export-components */
 import { createContext, useReducer, useContext } from 'react';
 
 // Création du contexte
@@ -19,6 +20,7 @@ function cartReducer(state, action) {
   switch (action.type) {
     case ADD_TO_CART:
       { const { product, quantity } = action.payload;
+      // Tâche 4 findIndex()
       const existingItemIndex = state.items.findIndex(item => item._id === product._id);
       
       if (existingItemIndex !== -1) {
