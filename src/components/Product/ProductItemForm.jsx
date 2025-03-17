@@ -7,7 +7,20 @@ function ProductItemForm({ product }) {
     const { addToCart } = useCart();
 
     const handleQuantityChange = (event) => {
-        setQuantity(parseInt(event.target.value));
+        const value = event.target.value;
+        
+        if (value === "") return;
+
+        const parsedValue = parseInt(value, 10);
+        if (!isNaN(parsedValue) && parsedValue >= 1) {
+            setQuantity(parsedValue);
+        }
+    };
+
+    const handleBlur = () => {
+        if (quantity < 1 || isNaN(quantity)) {
+            setQuantity(1);
+        }
     };
 
     const handleSubmit = (event) => {
@@ -17,16 +30,17 @@ function ProductItemForm({ product }) {
     };
 
     return (
-        <form onSubmit={handleSubmit} style={{display: "flex", alignItems: "center"}}>
-            <label htmlFor="quantity" style={{fontSize: "0.8rem"}}>
-                <input 
-                    type="number" 
-                    id="quantity" 
-                    name="quantity" 
-                    min="1" 
+        <form onSubmit={handleSubmit} style={{ display: "flex", alignItems: "center" }}>
+            <label htmlFor="quantity" style={{ fontSize: "0.8rem" }}>
+                <input
+                    type="number"
+                    id="quantity"
+                    name="quantity"
+                    min="1"
                     value={quantity}
                     onChange={handleQuantityChange}
-                    style={{marginRight: "10px"}}
+                    onBlur={handleBlur}
+                    style={{ marginRight: "10px" }}
                 />
             </label>
             <Button variant="primary" type="submit">Add</Button>
