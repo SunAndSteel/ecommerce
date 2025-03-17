@@ -11,7 +11,7 @@
 - [x] Ajouter un produit dans le panier - définition et utilisation d’un contexte, utilisation du hook _useContext()_, définition d’une fonction réductrice et utilisation du hook _useReducer()_.
 - [x]  Gestion dynamique du nombre d’item dans le panier -  utilisation de la fonction reduce().
 
-- [ ] Amélioration du panier avec _findIndex()_
+- [x] Amélioration du panier avec _findIndex()_
 - [ ] Chaque article du panier peut être supprimé via un bouton (utiliser filter())
 - [ ] Page détails de produit
 
