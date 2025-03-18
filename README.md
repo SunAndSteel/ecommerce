@@ -1,8 +1,9 @@
 # Projet Frontend avancé Q2
 ***Objectif*** : réaliser un site d'e-commerce en utilisant React, MongoDB, et Bootstrap
-### Installation
-- `npm install`
-- `npm run dev`
+
+### Démarrage 
+- Exécuter le `start.ps1` démarre les serveurs nécessaires (Vite, MongoDB et Node)
+
 
 ## Front-end 
 ### Tâches 
