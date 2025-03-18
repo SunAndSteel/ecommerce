@@ -6,10 +6,14 @@ COPY package.json .
 
 COPY yarn.lock .
 
+RUN yarn config set "strict-ssl" false -g
+
 RUN yarn install 
+
+RUN npx browserslist@latest --update-db
 
 COPY . .
 
 EXPOSE $PORT
 
-CMD yarn run start:dev
+ENTRYPOINT [ "yarn","run","start:prod" ]

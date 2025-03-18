@@ -30,7 +30,7 @@
       <a href="#build-with">Build With</a>
     </li>
     <li>
-      <a href="#plans">Plans</a>
+      <a href="#to-do">To Do</a>
     </li>
     <li>
       <a href="#installation">Installation</a>
@@ -173,18 +173,11 @@ List of any major frameworks used to build the project.
 * [Express Locale](https://www.npmjs.com/package/express-locale) - Express middleware to determine the locale identifier of the incomming request.
 * [Node Polyglot](https://www.npmjs.com/package/node-polyglot) - It provides a simple solution for interpolation and pluralization, based off of Airbnb’s experience adding I18n functionality to its Backbone.js and Node apps.
 
-## Plans
+## To-do
 
-* Rewrite project with TypeScript NestJS.
-* Use Redis for caching
-* Use Elasticsearch as a search engine for products/categories
-* Use Kubernetes for Deployment
-* Use Prometheus & Grafana for monitoring
-* Use Terraform
-* Extend API's Functionality
-* Use multi-database (MongoDB - PostgreSQL)
-* Use Microservices
-* Use Sockets for handling real-time things.
+* Using MicroServices with Event-Driven.
+
+* Using TypeScript.
 
 ## Installation
 

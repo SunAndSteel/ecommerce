@@ -98,11 +98,11 @@ const docs = {
   },
   servers: [
     {
-      url: 'https://e-commerce-a-p-i.herokuapp.com/api',
+      url: 'http://localhost:3000/api',
       description: 'Production Server'
     },
     {
-      url: 'http://localhost:8000/api',
+      url: 'http://localhost:3000/api',
       description: 'Development Server'
     }
   ],

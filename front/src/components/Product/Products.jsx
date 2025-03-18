@@ -1,12 +1,18 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import ProductItem from './ProductItem';
 import { useEffect, useState } from 'react';
-import { testList } from '../Product/testList';
+import { testList } from '../Product/testList'
+import axios from 'axios';
 
 function Products() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
+
+    axios.get('/products').then(response => {
+      setProducts(response.data);
+    });
+
     setProducts(testList);
   }, []);
 

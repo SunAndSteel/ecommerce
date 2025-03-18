@@ -10,6 +10,7 @@ import createLocaleMiddleware from 'express-locale';
 
 // Configs
 import config from './config/config';
+console.log(config);
 import { successHandle, errorHandle } from './config/morgan';
 
 // Middlewares
@@ -21,7 +22,7 @@ import AppError from './utils/appError';
 import startPolyglot from './utils/startPolyglot';
 
 // Documentation
-import docs from '../docs/swagger';
+import docs from '../build-docs/swagger';
 
 // Routes
 import routes from './routes';

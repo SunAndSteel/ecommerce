@@ -10,13 +10,12 @@ const connectDB = async () => {
 
   mongoose.set('autoIndex', true);
 
-  const con = await mongoose.connect(DB, {
+  const con = await mongoose.connect('mongodb://root:root@mongodb:27017', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     autoIndex: true
   });
-
-  logger.info(`MongoDB Connected: ${con.connection.host}.`);
+  logger.info(`= MongoDB Connected: ${con.connection.host}.`);
 
   mongoose.connection.on('connecting', () => {
     logger.info('Connecting to Database');
@@ -27,7 +26,7 @@ const connectDB = async () => {
   });
 
   mongoose.connection.on('error', (err) => {
-    logger.error(err.message);
+    logger.error(`==>>> ${err.message}`);
   });
 
   mongoose.connection.on('disconnected', () => {
