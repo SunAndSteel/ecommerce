@@ -4,7 +4,7 @@
 - `npm install`
 - `npm run dev`
 
-## Front-end (Florent)
+## Front-end 
 ### Tâches 
 
 - [x] Utiliser map() pour afficher les items dans le composants <Products />
@@ -15,7 +15,7 @@
 - [ ] Chaque article du panier peut être supprimé via un bouton (utiliser filter())
 - [ ] Page détails de produit
 
-## Backend (August2)
+## Backend
 ### Tâches 
 - [ ]  Utilisation de la bibliothèque Axios, interaction avec une API Rest et utilisation du hook _useEffect()_.
 - [ ]  Afficher l’état de chargement des données : Utiliser une icône de chargement animée (spinner)
