@@ -1,7 +1,7 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import ProductItem from './ProductItem';
 import { useEffect, useState } from 'react';
-import { testList } from '../Product/testList'
+// import { testList } from '../Product/testList'
 import axios from 'axios';
 
 function Products() {
@@ -27,9 +27,8 @@ function Products() {
         setError('Failed to load products');
         setLoading(false);
       });
-      
-    // Remove the testList fallback
-    // setProducts(testList);
+    
+      // setProducts(testList);
   }, []);
   if (loading) return <p>Loading products...</p>;
   if (error) return <p>Error: {error}</p>;
