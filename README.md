@@ -1,7 +1,7 @@
 # Projet Frontend avancé Q2
 ***Étudiant*** : Florent Urbain
 
-***Objectif*** : Réaliser un site d'e-commerce en utilisant React, MongoDB, et Bootstrap.
+***Objectif*** : Réaliser un site d'e-commerce en utilisant React, MongoDB, NodeJS(express) et Bootstrap.
 
 ***Explications/Notes/Brouillons*** : (Markdown et CVS) : https://drive.google.com/file/d/1fL2JmXvXyAPMnVcwPL3zTielTM_sVQGf/view?usp=sharing
 
@@ -21,7 +21,8 @@
 #### La commande docker-compose up peut ne pas fonctionner à l'étape "yarn install".
 1. Supprimer ce dossier dans l’éditeur de registre (***FAIRE UNE BACKUP AVANT***)
   - Computer\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters\Interfaces
-2. Fermer complètement tous les services docker dans le gestionnaire de tâche
+2. Fermer complètement tous les services docker dans le gestionnaire de tâche.
+3. Refaire la commande `docker-compose up` dans le dossier ***back***.
 
 
 ## Front-end 
