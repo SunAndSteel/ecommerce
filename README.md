@@ -16,6 +16,8 @@
 3. Se rendre sur le lien affiché sur le terminal.
 
 
+[![ET JE LÈVE MON VERRE À TOUT CEUX QUI CODENT PAS](https://img.youtube.com/vi/h4T2X2x7RFU/0.jpg)](https://www.youtube.com/watch?v=h4T2X2x7RFU)
+
 ---
 ### ***Bug avec Docker/yarn sous Windows***
 #### La commande docker-compose up peut ne pas fonctionner à l'étape "yarn install".
