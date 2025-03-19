@@ -12,7 +12,7 @@ function Products() {
 
 
   useEffect(() => {
-    const API_URL = 'http://localhost:3000/products'; // à changer
+    const API_URL = 'http://127.0.0.1:3000'; // à changer
 
     setLoading(true);
     

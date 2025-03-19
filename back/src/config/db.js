@@ -6,7 +6,7 @@ import config from './config';
  * Connect To Database
  */
 const connectDB = async () => {
-  const DB = config.db.url.replace('<PASSWORD>', config.db.password);
+  const DB = config.db.url.replace('root', config.db.password);
 
   mongoose.set('autoIndex', true);
 
