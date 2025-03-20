@@ -1,7 +1,6 @@
 import { Container, Row, Col } from 'react-bootstrap';
 import ProductItem from './ProductItem';
 import { useEffect, useState } from 'react';
-// import { testList } from '../Product/testList'
 import axios from 'axios';
 
 function Products() {
@@ -12,14 +11,14 @@ function Products() {
 
 
   useEffect(() => {
-    const API_URL = 'http://127.0.0.1:3000'; // à changer
+    const API_URL = 'http://127.0.0.1:3000/api'; 
 
     setLoading(true);
     
-    axios.get(`${API_URL}/products`)
+    axios.get(`${API_URL}/product`)
       .then(response => {
         console.log('Products fetched:', response.data);
-        setProducts(response.data);
+        setProducts(response.data.products);
         setLoading(false);
       })
       .catch(err => {
@@ -28,7 +27,7 @@ function Products() {
         setLoading(false);
       });
     
-      // setProducts(testList);
+      
   }, []);
   if (loading) return <p>Loading products...</p>;
   if (error) return <p>Error: {error}</p>;
