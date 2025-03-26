@@ -2,17 +2,16 @@ import { Card } from 'react-bootstrap';
 import ProductItemForm from './ProductItemForm';
 
 function ProductItem(props) {
-    // Créer un objet avec toutes les propriétés nécéssaires
     const product = {
-        _id: props.id || props.key, // Utiliser l'ID ou la clé comme identifiant
+        _id: props.id || props.key,
         name: props.name,
         price: props.price,
-        // Ajouter d'autres propriétés si besoin
+        
     };
     
     return (
         <Card style={{ width: '18rem', margin: "10px" }}>
-            <Card.Img variant="top" src="https://dummyimage.com/800x480/1500ff/000011" alt="" />
+            <Card.Img variant="top" src={props.image} alt="" />
             <Card.Body>
                 <Card.Title>{props.name}</Card.Title>
                 <Card.Text>{props.price} €</Card.Text>
